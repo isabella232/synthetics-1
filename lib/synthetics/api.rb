@@ -13,5 +13,25 @@ module Synthetics
     def initialize(client)
       @client = client
     end
+
+    def label(label)
+      Label.new(client, label)
+    end
+
+    def labels
+      Labels.new(client)
+    end
+
+    def locations
+      Locations.new(client)
+    end
+
+    def monitor(monitor_uuid)
+      Monitor.new(client, monitor_uuid)
+    end
+
+    def monitors
+      Monitors.new(client)
+    end
   end
 end

@@ -4,6 +4,7 @@ module Synthetics
     class Base
       extend Forwardable
 
+      attr_reader :client
       def_delegators :@client, :request
 
       def initialize(client)
