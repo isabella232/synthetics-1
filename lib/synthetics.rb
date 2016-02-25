@@ -7,6 +7,7 @@ require 'synthetics/constants'
 require 'synthetics/errors'
 require 'synthetics/util'
 require 'synthetics/client'
+require 'synthetics/api'
 
 # Top level gem namespace.
 module Synthetics
