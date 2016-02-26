@@ -1,6 +1,8 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'synthetics'
+require 'pry'
+require 'vcr'
 
-Dir['spec/shared_examples/**/*.rb'].each do |file|
+Dir['spec/support/**/*.rb'].each do |file|
   load file
 end
