@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://synthetics.newrelic.com/synthetics/api/v1/locations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.45.4
+      Content-Type:
+      - application/json
+      X-Api-Key: "<TEST-API-KEY>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 26 Feb 2016 14:49:47 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - Deny
+      Content-Length:
+      - '974'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicHJpdmF0ZSI6ZmFsc2UsIm5hbWUiOiJBV1NfVVNfRUFTVF8xIiwibGFi
+        ZWwiOiJXYXNoaW5ndG9uLCBEQywgVVNBIn0seyJwcml2YXRlIjpmYWxzZSwi
+        bmFtZSI6IkFXU19VU19XRVNUXzEiLCJsYWJlbCI6IlNhbiBGcmFuY2lzY28s
+        IENBLCBVU0EifSx7InByaXZhdGUiOmZhbHNlLCJuYW1lIjoiQVdTX1VTX1dF
+        U1RfMiIsImxhYmVsIjoiUG9ydGxhbmQsIE9SLCBVU0EifSx7InByaXZhdGUi
+        OmZhbHNlLCJuYW1lIjoiQVdTX0VVX1dFU1RfMSIsImxhYmVsIjoiRHVibGlu
+        LCBJRSJ9LHsicHJpdmF0ZSI6ZmFsc2UsIm5hbWUiOiJBV1NfRVVfQ0VOVFJB
+        TF8xIiwibGFiZWwiOiJGcmFua2Z1cnQsIERFIn0seyJwcml2YXRlIjpmYWxz
+        ZSwibmFtZSI6IkFXU19BUF9TT1VUSEVBU1RfMSIsImxhYmVsIjoiU2luZ2Fw
+        b3JlLCBTRyJ9LHsicHJpdmF0ZSI6ZmFsc2UsIm5hbWUiOiJBV1NfQVBfTk9S
+        VEhFQVNUXzEiLCJsYWJlbCI6IlRva3lvLCBKUCJ9LHsicHJpdmF0ZSI6ZmFs
+        c2UsIm5hbWUiOiJBV1NfQVBfU09VVEhFQVNUXzIiLCJsYWJlbCI6IlN5ZG5l
+        eSwgQVUifSx7InByaXZhdGUiOmZhbHNlLCJuYW1lIjoiQVdTX1NBX0VBU1Rf
+        MSIsImxhYmVsIjoiU8OjbyBQYXVsbywgQlIifSx7InByaXZhdGUiOmZhbHNl
+        LCJuYW1lIjoiTElOT0RFX1VTX1dFU1RfMSIsImxhYmVsIjoiRnJlbW9udCwg
+        Q0EsIFVTQSJ9LHsicHJpdmF0ZSI6ZmFsc2UsIm5hbWUiOiJMSU5PREVfVVNf
+        Q0VOVFJBTF8xIiwibGFiZWwiOiJEYWxsYXMsIFRYLCBVU0EifSx7InByaXZh
+        dGUiOmZhbHNlLCJuYW1lIjoiTElOT0RFX1VTX1NPVVRIXzEiLCJsYWJlbCI6
+        IkF0bGFudGEsIEdBLCBVU0EifSx7InByaXZhdGUiOmZhbHNlLCJuYW1lIjoi
+        TElOT0RFX1VTX0VBU1RfMSIsImxhYmVsIjoiTmV3YXJrLCBOSiwgVVNBIn0s
+        eyJwcml2YXRlIjpmYWxzZSwibmFtZSI6IkxJTk9ERV9FVV9XRVNUXzEiLCJs
+        YWJlbCI6IkxvbmRvbiwgRW5nbGFuZCwgVUsifV0=
+    http_version: 
+  recorded_at: Fri, 26 Feb 2016 14:49:47 GMT
+recorded_with: VCR 3.0.0
