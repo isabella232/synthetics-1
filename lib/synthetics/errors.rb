@@ -8,5 +8,5 @@ module Synthetics
   # Raised when there is a 500 level error returned from the Synthetics API.
   ServerError = Class.new(Error)
   # Raised when no API is given to a Synthetics client.
-  NoApiKeyError = Class.new(Error)
+  NoAPIKeyError = Class.new(Error)
 end
