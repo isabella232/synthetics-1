@@ -17,7 +17,7 @@ module Synthetics
         request(
           method: 'POST',
           path: "/monitors/#{monitor_uuid}/labels",
-          body: { category: label }
+          body: label
         )
       end
 

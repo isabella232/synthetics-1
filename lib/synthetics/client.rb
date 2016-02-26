@@ -35,8 +35,10 @@ module Synthetics
         'Content-Type' => 'application/json',
         'X-API-Key' => @api_key
       )
+      if opts.key?(:body) && !opts[:body].is_a?(String)
+        opts[:body] = deep_camelize_keys(opts[:body]).to_json
+      end
       opts[:expects] = 200..204
-      opts[:body] = deep_camelize_keys(opts[:body]).to_json if opts.key?(:body)
     end
 
     def excon

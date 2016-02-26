@@ -24,7 +24,7 @@ describe Synthetics::API::Label do
       {
         method: 'POST',
         path: '/monitors/TEST-MONITOR-UUID/labels',
-        body: { category: 'test-label' }
+        body: 'test-label'
       }
     end
 
