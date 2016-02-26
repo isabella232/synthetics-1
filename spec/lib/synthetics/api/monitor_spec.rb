@@ -5,8 +5,8 @@ describe Synthetics::API::Monitor do
   let(:client) { double(:client) }
   let(:monitor_uuid) { 'TEST-MONITOR-UUID' }
 
-  describe '#fetch' do
-    let(:make_request) { subject.fetch }
+  describe '#show' do
+    let(:make_request) { subject.show }
     let(:expected_params) do
       {
         method: 'GET',

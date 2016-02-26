@@ -9,7 +9,7 @@ module Synthetics
         @monitor_uuid = monitor_uuid
       end
 
-      def fetch
+      def show
         request(path: "/monitors/#{monitor_uuid}", method: 'GET')
       end
 
