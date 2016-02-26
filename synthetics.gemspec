@@ -15,7 +15,7 @@ synthetics interfaces with New Relic Synthetics' HTTP API:
 https://docs.newrelic.com/docs/apis/synthetics-rest-api/. The gem can be used to
 read, create, update, and destroy monitors.
 EOS
-  spec.homepage      = 'https://github.com/dotswipely/synthetics'
+  spec.homepage      = 'https://github.com/swipely/synthetics'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
