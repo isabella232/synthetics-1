@@ -11,8 +11,11 @@ module Synthetics
       wrap_errors do
         normailze_request_options!(options)
         response = excon.request(options)
+               
         return nil if response.body.empty?
-        deep_snakeify_keys(JSON.parse(response.body))
+        response_body = deep_snakeify_keys(JSON.parse(response.body))
+        response_body[:headers] = response.headers
+        response_body
       end
     end
 
