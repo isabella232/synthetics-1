@@ -1,4 +1,3 @@
-require 'awesome_print'
 module Synthetics
   class API
     # This class makes requests to the collection methods in the monitors
